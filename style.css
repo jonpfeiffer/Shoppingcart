@@ -1,0 +1,51 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  border: 1px solid black;
+
+}
+
+main::before, main::after {
+  content: " ";
+  display: table;
+}
+
+main::after {
+  clear: both;
+}
+
+.catalog {
+  border: 1px solid black;
+  margin: 5px;
+  width: 100px;
+  float: left;
+
+}
+
+.cart {
+  margin: 5px;
+  float: left;
+}
+
+.cart .items {
+  list-style-type: none;
+}
+
+.clear {
+  float: right;
+  clear: both;
+}
+
+li {
+  margin: 2px;
+}
+
+button {
+  padding: 2px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+

@@ -1,0 +1,551 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"append",
+				"appendTo"
+			],
+			[
+				"remove",
+				"removeItems"
+			],
+			[
+				"add",
+				"addItems"
+			],
+			[
+				"decode",
+				"json_decode"
+			],
+			[
+				"ren",
+				"renderCart"
+			],
+			[
+				"cart",
+				"cartContents"
+			],
+			[
+				"list",
+				"list-n	list-style-type: none;"
+			],
+			[
+				"for",
+				"for	for (…) {…} (Improved Native For-Loop)"
+			],
+			[
+				"class",
+				"className"
+			],
+			[
+				"clas",
+				"className"
+			],
+			[
+				"cla",
+				"className"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"del",
+				"delButton"
+			],
+			[
+				"in",
+				"innerHTML"
+			],
+			[
+				"text",
+				"textValue"
+			],
+			[
+				"st",
+				"style	Tag"
+			],
+			[
+				"per",
+				"personRequest"
+			],
+			[
+				"err",
+				"errorBox"
+			],
+			[
+				"erro",
+				"errorBox"
+			],
+			[
+				"car",
+				"car_direction"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"person",
+				"personAt"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"on",
+				"onclick	Attr"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 624,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "main.js",
+			"settings":
+			{
+				"buffer_size": 3659,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/jon/www/test.php",
+			"settings":
+			{
+				"buffer_size": 191,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"ss",
+				"Set Syntax: HTML"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"ssc",
+				"Set Syntax: CSS"
+			],
+			[
+				"ssh",
+				"Set Syntax: HTML"
+			],
+			[
+				"",
+				"ANF: New File"
+			],
+			[
+				"ssht",
+				"Set Syntax: HTML"
+			],
+			[
+				"sni",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"an",
+				"ANF: New File"
+			],
+			[
+				"pakc",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Discover Packages"
+			],
+			[
+				"ssjs",
+				"Set Syntax: JSON"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"ssjavas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"pa",
+				"Package Control: List Packages"
+			],
+			[
+				"sscss",
+				"Set Syntax: CSS"
+			],
+			[
+				"sshtml",
+				"Set Syntax: HTML"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/jon/www/test.php",
+		"/home/jon/Projects/shoppingcart/newmain.js",
+		"/home/jon/Projects/shoppingcart/style.css",
+		"/home/jon/www/test.html",
+		"/var/www/html/index.html",
+		"/home/jon/Projects/shoppingcart/shoppingcart.sublime-project",
+		"/home/jon/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/jpfeiffer/Projects/shoppingcart/main.js",
+		"/home/jpfeiffer/Projects/Scratch/floating.html",
+		"/home/jpfeiffer/Projects/Scratch/float.css",
+		"/home/jpfeiffer/Projects/Scratch/todolist.html",
+		"/home/jpfeiffer/Projects/Scratch/form.html",
+		"/home/jpfeiffer/Projects/htmlforms",
+		"/home/jpfeiffer/Projects/Scratch/index.html",
+		"/home/jpfeiffer/Projects/js-practice1/js-practice1/practice.js",
+		"/home/jpfeiffer/Projects/Scratch/my.js",
+		"/home/jpfeiffer/Projects/myFirstDesign/first-design/index.html",
+		"/home/jpfeiffer/Projects/Scratch/theDiv.html",
+		"/home/jpfeiffer/Projects/js-practice1/practice.js",
+		"/home/jpfeiffer/Projects/elevator-part1/Elevator-Part-1/index.html",
+		"/home/jpfeiffer/Projects/Scratch/jstest.html",
+		"/home/jpfeiffer/.config/sublime-text-3/Packages/User/log.sublime-snippet",
+		"/home/jpfeiffer/Projects/elevator-part1/Elevator-Part-1/elevator.html",
+		"/home/jpfeiffer/.config/sublime-text-3/Packages/User/hello.sublime-snippet",
+		"/home/jpfeiffer/.config/sublime-text-3/Packages/User/for.sublime-snippet",
+		"/home/jpfeiffer/Projects/Scratch/test.json",
+		"/home/jpfeiffer/Projects/myFirstDesign/first-design/design.css",
+		"/home/jpfeiffer/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/jpfeiffer/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/jpfeiffer/Projects/elevator-part1/Elevator-Part-1/test.js",
+		"/home/jpfeiffer/.config/sublime-text-3/Packages/JSHint Gutter/JSHint.sublime-settings",
+		"/home/jpfeiffer/Projects/Scratch/style.css",
+		"/home/jpfeiffer/Projects/story/sleepCave.html",
+		"/home/jpfeiffer/Projects/YellowRed/style.css",
+		"/home/jpfeiffer/Projects/story/cave.html",
+		"/home/jpfeiffer/Projects/story/exploreCave.html",
+		"/home/jpfeiffer/Projects/story/fightBear.html",
+		"/home/jpfeiffer/Projects/story/runBear.html",
+		"/home/jpfeiffer/Projects/story/sewer.html",
+		"/home/jpfeiffer/Projects/story/index.html",
+		"/home/jpfeiffer/Projects/story/style.css",
+		"/home/jpfeiffer/story/family.html",
+		"/home/jpfeiffer/story/exploreCave.html",
+		"/home/jpfeiffer/.config/sublime-text-3/Packages/family.html",
+		"/home/jpfeiffer/.config/sublime-text-3/Packages/scratch.html",
+		"/home/jpfeiffer/story/sewer.html",
+		"/home/jpfeiffer/story/sleepCave.html",
+		"/home/jpfeiffer/story/cave.html",
+		"/home/jpfeiffer/story/index.html",
+		"/home/jpfeiffer/story/fightBear.html",
+		"/home/jpfeiffer/story/runBear.html",
+		"/home/jpfeiffer/story/index2.html"
+	],
+	"find":
+	{
+		"height": 31.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"qty",
+			"renderCatalog",
+			"document.getElementById",
+			"<div class=\"outer\">\n      <div class=\"image\"></div>\n      <div class=\"content\"></div>\n    </div>",
+			"script",
+			"car_at",
+			"person_at",
+			"person_request",
+			"car_direction",
+			"car_at",
+			"person_at",
+			"person_request",
+			"car_direction",
+			"carDirection",
+			"personRequest"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"quantity",
+			"initialFloor",
+			"currentFloor",
+			"direction",
+			"initialDirection",
+			"initialFloor",
+			"currentFloor",
+			"direction",
+			"initialDirection",
+			"direction"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 624,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								454,
+								454
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 230.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3659,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								795,
+								795
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 853.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/jon/www/test.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 191,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								169,
+								169
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.379069767441,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "shoppingcart.sublime-project",
+	"replace":
+	{
+		"height": 72.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"~/Projects/htmlforms/forms.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
