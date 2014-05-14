@@ -1,45 +1,7 @@
 $(function () {
  
-  var cart = {
-    // add: function (target){
-    //   cart[target].quantity++;
-    // },
-
-    // remove: function (target){
-    //   cart[target].quantity--;
-    // },
-
-    // lineDel: function (target){
-    //   cart[target].quantity = 0;
-    // },
-
-    // clear: function () {
-    //   for (i in cart){
-    //     cart[i].quantity = 0;
-    //   }
-    // },
-
-    union_jack: {
-      'name': 'Union Jack',
-      'quantity': 0,
-      'sku': 0001
-    },
-    hop_knot: {
-      'name': 'Hop Knot',
-      'quantity': 0,
-      'sku': 0002
-    },
-    stone_ipa: {
-      'name': 'Stone IPA',
-      'quantity': 0,
-      'sku': 0003
-    },
-    black_butte_porter: {
-      'name': 'Black Butte Porter',
-      'quantity': 0,
-      'sku': 0004
-    }
-  }
+  var cart = {};
+  var catalog = {};
 
   //draw the cart
   var renderCart = function () {
@@ -57,42 +19,69 @@ $(function () {
     }
   }
   
+ 
+  var makeCatalog = function() {
+    for (var i in default_products){
+      var inside = default_products[i];
+      var sku = inside.sku;
+      catalog[sku] = {
+        name: inside.name,
+        price: inside.price,
+        description: inside.description,
+        category: inside.category
+      };
+    }
+  }
   //draws the catalog
-  var renderCatalog = function () {
+  var renderCatalog = function() {
     $('.catalog .items').empty();
-    for (var i in cart) {
+    for (var i in catalog) {
       var button = $('<button>');
       button.addClass('add')
         .text('Add');
       $(document.createElement('li')).addClass(i)
-        .text(cart[i].name)
+        .text(catalog[i].name)
+        .append("<br>")
         .append(button)
         .appendTo('.catalog .items');
     }
   }
-
+  makeCatalog();
   renderCatalog();
 
-  var addItems = function (target) {
-    cart[target].quantity++;
-  }
+  var addItems = function(target) {
+    if (cart[target]){
+      cart[target].quantity++;
+    } else {
+      cart[target] = {
+        name: catalog[target].name,
+        quantity: 1
 
-  var removeItems = function (target) {
-    cart[target].quantity--;
-  }
-
-  var lineDel = function (target) {
-    cart[target].quantity = 0;
-  }
-
-  var clearCart = function () {
-    for (var i in cart){
-      cart[i].quantity = 0;
+      }
     }
   }
 
-  // var cartJSON = JSON.stringify(cart);
-  //$.post('test.php', cartJSON);
+  var removeItems = function(target) {
+    if (cart[target].quantity > 0) {
+      cart[target].quantity--;
+    }else {
+      delete cart[target];
+    }
+  }
+
+
+  var lineDel = function(target) {
+    cart[target].quantity = 0;
+    delete cart[target];
+  }
+
+  var clearCart = function() {
+    for (var i in cart){
+      cart[i].quantity = 0;
+      delete cart[i];
+    }
+  }
+
   //when the add button is clicked
   $('li').on('click', '.add', function() { 
     var target = $(this).parent().attr('class')
