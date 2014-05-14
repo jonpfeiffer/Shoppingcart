@@ -23,8 +23,30 @@
       </ul>
     </div>
     <button class="clear">Clear Cart Contents</button>
-    <button class="process">Checkout Now!</button>
+    
   </main>
+    <div>
+      <form action="cart.php" method="POST">
+        <p>
+          <span>First Name</span>
+          <input type="text" name="first-name">
+        </p>
+        <p>
+          <span>Last Name</span>
+          <input type="text" name="last-name">
+        </p>
+        <p>
+          <span>Email</span>
+          <input type="text" name="email">
+        </p>
+        <p>
+          <span>Credit Card</span>
+          <input type="text" name="ccnumber">
+        </p>
+          <input type="hidden" name="cart_data" id="cart_data">
+        <button type="submit">Checkout Now!</button>
+    </form>
+    </div>
 
 
 

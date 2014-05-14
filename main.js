@@ -125,10 +125,9 @@ $(function () {
     renderCart();
   });
 
-  // $('.process').click(function(){
-  //   $.post('test.php', cartJSON);
-  //   window.location = "/test.php"
-  // });
+  $('form button').click(function(){
+    $('#cart_data').val(JSON.stringify(cart));
+  });
 
 
 
