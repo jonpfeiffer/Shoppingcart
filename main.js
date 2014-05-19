@@ -3,15 +3,15 @@ $(function () {
   var cart = {};
   var catalog = {};
 
+
+    //draw the cart NEW handlebars
     var renderCart = function() {
       $('.cart .items').empty();
       var templateScript = $('#cart-media-object').html();
-      // for(i in cart){
-        var theTemplate = Handlebars.compile(templateScript);
-        $('.cart .items').append(theTemplate(cart));
-      // }
+        var cartTemplate = Handlebars.compile(templateScript);
+        $('.cart .items').append(cartTemplate(cart));
     } 
-  //draw the cart
+  //draw the cart OLD
   // var renderCart = function () {
   //   $('.cart .items').empty();
   //     for (var i in cart) {
@@ -37,23 +37,27 @@ $(function () {
         price: inside.price,
         description: inside.description,
         category: inside.category,
-        thumbnail: inside.thumbnail
+        thumbnail: inside.thumbnail,
+        available: inside.quantity
       };
     }
   }
   //draws the catalog
   var renderCatalog = function() {
     $('.catalog .items').empty();
-    for (var i in catalog) {
-      var button = $('<button>');
-      button.addClass('add')
-        .text('Add');
-      $(document.createElement('li')).addClass(i)
-        .text(catalog[i].name)
-        .append("<br>")
-        .append(button)
-        .appendTo('.catalog .items');
-    }
+    var template = $('#catalog-media-object').html();
+    var catalogTemplate = Handlebars.compile(template);
+    $('.catalog .items').append(catalogTemplate(catalog));
+    // for (var i in catalog) {
+    //   var button = $('<button>');
+    //   button.addClass('add')
+    //     .text('Add');
+    //   $(document.createElement('li')).addClass(i)
+    //     .text(catalog[i].name)
+    //     .append("<br>")
+    //     .append(button)
+    //     .appendTo('.catalog .items');
+    // }
   }
   makeCatalog();
   renderCatalog();
@@ -97,7 +101,7 @@ $(function () {
 
   //when the add button is clicked
   $('li').on('click', '.add', function() { 
-    var target = $(this).parent().attr('class')
+    var target = $(this).parents('li').attr('class')
     addItems(target);  
 
     renderCart();
@@ -115,7 +119,6 @@ $(function () {
   //when the Remove 1 button is clicked
   $('ul').on('click', '.decrement', function(){
     var target = $(this).parents('li').attr('id');
-    console.log(target);
     // var targetId = target.parents().attr('id');
     // cart.remove(target);
     removeItems(target);
