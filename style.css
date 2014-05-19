@@ -48,7 +48,6 @@ main::after {
   float: left;
   background-color: #C3CCC6;
   min-height: 50px;
-  max-width: 800px;
 }
 
 div .outer::before, div .outer::after {
@@ -67,7 +66,14 @@ div .outer {
   /*float: left;*/
 }
 
-img {
+.cart img {
+  height: 45px;
+  width: 45px;
+  float: left;
+  display: block;
+  margin:5px;
+}
+.catalog img {
   height: 100px;
   width: 100px;
   float: left;
