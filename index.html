@@ -69,19 +69,23 @@
 
 
 <script id="cart-media-object" type="text/x-handlebars-template">
-    <li id="{{this.text}}">
+    {{#each this}}
+    <li id="{{@key}}">
       <div class="outer">
-        <img src="{{this.thumbnail}}">
+        <img src="{{thumbnail}}">
         <div class="content">
-          <h3>{{this.name}} x {{this.quantity}}</h3>
+          <h3>{{name}} x {{quantity}}</h3>
           <p>
-          {{this.description}} 
+          {{description}} 
           </p>
           <button class="remove">X</button>
           <button class="decrement">Remove 1</button>
         </div>
       </div>
+      {{/each}}
 </script>
+<script id="catalog-media-object" type="text/x-handlebars-template">
+  
 
 </body>
 </html>

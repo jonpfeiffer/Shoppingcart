@@ -6,10 +6,10 @@ $(function () {
     var renderCart = function() {
       $('.cart .items').empty();
       var templateScript = $('#cart-media-object').html();
-      for(i in cart){
+      // for(i in cart){
         var theTemplate = Handlebars.compile(templateScript);
-        $('.cart .items').append(theTemplate(cart[i]));
-      }
+        $('.cart .items').append(theTemplate(cart));
+      // }
     } 
   //draw the cart
   // var renderCart = function () {
@@ -105,7 +105,7 @@ $(function () {
 
   //when the X button is clicked
   $('ul').on('click', '.del', function(){
-    var target = $(this).parent().attr('id');
+    var target = $(this).parents('li').attr('id');
     // cart.lineDel(target);
     lineDel(target);
     renderCart();
