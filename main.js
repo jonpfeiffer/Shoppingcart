@@ -74,9 +74,10 @@ $(function () {
   }
 
   var removeItems = function(target) {
-    if (cart[target].quantity > 0) {
+    if (cart[target].quantity > 1) {
       cart[target].quantity--;
     }else {
+      cart[target].quantity = 0;
       delete cart[target];
     }
   }
