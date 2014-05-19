@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Shopping Cart</title>
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0-alpha.2/handlebars.min.js"></script>
   <script src="default_products.js"></script>
   <script src="main.js"></script>
   <link rel="stylesheet" href="style.css">
@@ -20,7 +21,7 @@
     <div class="cart">
       <h3>Your Cart</h3>
       
-      <div class="outer">
+      <!-- <div class="outer">
         <img src="unionjack.jpg">
         <div class="content">
           <h3>Content</h3>
@@ -29,8 +30,10 @@
           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
           consequat 
           </p>
+          <button>X</button>
+          <button>Remove 1</button>
         </div>
-      </div>
+      </div> -->
       
       <ul class="items">
       
@@ -65,7 +68,20 @@
 
 
 
-
+<script id="cart-media-object" type="text/x-handlebars-template">
+    <li id="{{this.text}}">
+      <div class="outer">
+        <img src="{{this.thumbnail}}">
+        <div class="content">
+          <h3>{{this.name}} x {{this.quantity}}</h3>
+          <p>
+          {{this.description}} 
+          </p>
+          <button class="remove">X</button>
+          <button class="decrement">Remove 1</button>
+        </div>
+      </div>
+</script>
 
 </body>
 </html>
