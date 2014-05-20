@@ -2,6 +2,8 @@ $(function () {
  
   var cart = {};
   var catalog = {};
+  var categories = [];
+  var uniqueCategories = [];
 
 
     //draw the cart NEW handlebars
@@ -42,7 +44,15 @@ $(function () {
       };
     }
   }
-  //draws the catalog
+
+  var fillCategories = function() {
+    for (i in uniqueCategories){
+      $(document.createElement("option")).attr('value', uniqueCategories[i])
+        .text(uniqueCategories[i])
+        .appendTo('select');
+    }
+  }
+  //draws the catalog WITH Handlebars
   var renderCatalog = function() {
     $('.catalog .items').empty();
     var template = $('#catalog-media-object').html();
@@ -59,8 +69,6 @@ $(function () {
     //     .appendTo('.catalog .items');
     // }
   }
-  makeCatalog();
-  renderCatalog();
 
   var addItems = function(target) {
     if (cart[target]){
@@ -99,6 +107,36 @@ $(function () {
     }
   }
 
+  //make an array of product categories
+  var getCategories = function(){
+    for (var i in catalog){
+      categories.push(catalog[i].category);
+
+    }
+    uniqueCategories = unique(categories);
+  }
+
+  //removes duplicates from array
+  function unique(arr) {
+  var i,
+      len = arr.length,
+      out = [],
+      obj = { };
+
+  for (i = 0; i < len; i++) {
+      obj[arr[i]] = 0;
+  }
+  for (i in obj) {
+      out.push(i);
+  }
+  return out;
+  }
+
+  makeCatalog();
+  getCategories();
+  fillCategories();
+  renderCatalog();
+
   //when the add button is clicked
   $('li').on('click', '.add', function() { 
     var target = $(this).parents('li').attr('class')
@@ -135,8 +173,6 @@ $(function () {
   $('form button').click(function(){
     $('#cart_data').val(JSON.stringify(cart));
   });
-
-
 
 
 
