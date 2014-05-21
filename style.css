@@ -46,10 +46,12 @@ body {
 .cart {
   margin: 5px;
   border-style: inset;
-  float: left;
+  /*float: left;*/
   background-color: #C3CCC6;
   min-height: 50px;
   width: 440px;
+  display: inline-block;
+  position: fixed;
   
   
 }
