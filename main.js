@@ -32,7 +32,7 @@ $(function () {
  
   var makeCatalog = function(cat) {
     catalog = {};
-    if (cat == undefined | cat == 'All') {
+    if (cat == undefined | cat == 'All' | cat == 'all') {
       for (var i in default_products){
         var inside = default_products[i];
         var sku = inside.sku;
@@ -151,7 +151,7 @@ $(function () {
   renderCatalog();
 
   //when the add button is clicked
-  $('li').on('click', '.add', function() { 
+  $('body').on('click', '.add', function() { 
     var target = $(this).parents('li').attr('class')
     addItems(target);  
 
