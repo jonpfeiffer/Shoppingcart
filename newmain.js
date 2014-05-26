@@ -22,6 +22,8 @@ $(function(){
         };
       }
      }else {
+      //empty catalog object dummy
+      catalog = {};
       for (var i in default_products){
         if (default_products[i].category == cat){
           var inside = default_products[i];
@@ -142,7 +144,6 @@ $(function(){
   //when category is changed pass selected category to model and render
   $('#categorySelect').change(function() { 
     makeCatalog(getSelectedCategory());
-    // renderCatalog();
   });
 
   //submit cart JSON for processing
@@ -191,7 +192,7 @@ $(function(){
   }
 
 //On initial load
-  makeCatalog();
+  makeCatalog(getSelectedCategory());
   getCategories();
   fillCategories();
 });
