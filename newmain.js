@@ -5,6 +5,7 @@ $(function(){
 /**********************************************************/
   var cart = {};
   var catalog = {};
+  // foreach ($cart as $item) {
   var categories = [];
 
   var makeCatalog = function(cat) {
@@ -18,7 +19,6 @@ $(function(){
           description: inside.description,
           category: inside.category,
           thumbnail: inside.thumbnail,
-          available: inside.quantity
         };
       }
      }else {
@@ -34,7 +34,6 @@ $(function(){
             description: inside.description,
             category: inside.category,
             thumbnail: inside.thumbnail,
-            available: inside.quantity
           };
         }
       }
@@ -81,7 +80,6 @@ $(function(){
   var getCategories = function(){
     for (var i in catalog){
       categories.push(catalog[i].category);
-
     }
     categories = unique(categories);
   }
