@@ -43,11 +43,11 @@
       <form action="cart.php" method="POST">
         <p>
           <span>First Name</span>
-          <input type="text" name="first-name">
+          <input type="text" name="first_name">
         </p>
         <p>
           <span>Last Name</span>
-          <input type="text" name="last-name">
+          <input type="text" name="last_name">
         </p>
         <p>
           <span>Email</span>
