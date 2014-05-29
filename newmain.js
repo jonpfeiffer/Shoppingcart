@@ -22,7 +22,7 @@ $(function(){
         };
       }
      }else {
-      //empty catalog object dummy
+      //empty catalog object, dummy
       catalog = {};
       for (var i in default_products){
         if (default_products[i].category == cat){
